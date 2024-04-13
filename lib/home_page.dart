@@ -217,6 +217,20 @@ class _home_pageState extends State<home_page> {
                 ),
                 Text("  Happy Easter y'all"),
               ],
+            ),
+
+            Container(
+              margin: EdgeInsets.only(top: 30),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyApp()));
+                },
+                child: Icon(
+                  Icons.navigate_next_outlined,
+                  size: 40,
+                ),
+              ),
             )
           ],
         ),
